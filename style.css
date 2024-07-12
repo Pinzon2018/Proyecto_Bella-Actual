@@ -1,0 +1,389 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+.encabezado {
+    background-color: #e40d8e;
+    color: #fff;
+    padding: 15px;
+}
+
+.home, .user {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.home i {
+    position: absolute;
+    left: 50%;
+    font-size: 50px;
+    top: 10px;
+    color: azure;
+}
+
+.user i:hover {
+    background-color: #e40d8e;
+    color: black;
+}
+
+.home i:hover {
+    background-color: #e40d8e;
+    color: black;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.user i {
+    display: absolute;
+    font-size: 50px;
+    color: azure;
+}
+
+.page {
+    display: flex;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px solid rgba(0, 0, 0, .2);
+    height: 850px;
+}
+
+.code i {
+    position: absolute;
+    font-size: 180px;
+    margin-left: 27px;
+    margin-top: 10px;
+    color: black;
+}
+
+.add i {
+    position: absolute;
+    font-size: 180px;
+    margin-left: 27px;
+    margin-top: 230px;
+    color: black;
+}
+
+.history i {
+    position: absolute;
+    font-size: 180px;
+    margin-left: 27px;
+    margin-top: 430px;
+    color: black;
+}
+
+.config i {
+    position: absolute;
+    font-size: 180px;
+    margin-left: 27px;
+    margin-top: 630px;
+    color: black;
+}
+
+.page i:hover{
+    background-color: #e40d8e;
+    border-radius: 25px;
+}
+
+.content {
+    display: flex;
+    margin-left: 500px;
+    margin-top: 30px;
+}
+
+.notification {
+    display: flex;
+    font-size: 40px;
+    margin-right: 15px;
+    margin-top: 50px;
+}
+
+.notification i:hover {
+    background-color: white;
+}
+
+.date {
+    margin-top: 58.5px;
+}
+
+.content_date1 {
+    display: flex;
+    margin-right: 500px;
+    margin-top: 25px;
+    border: solid 2px #e40d8e;
+    background: transparent;
+    backdrop-filter: blur(20px);
+}
+
+.content_date1 h4{
+    margin: 15px;
+}
+
+.content_date2 {
+    display: flex;
+    margin-right: 500px;
+    margin-top: 25px;
+    border: solid 2px #e40d8e;
+    background: transparent;
+    backdrop-filter: blur(20px);
+}
+
+.content_date2 h4{
+    margin: 15px;
+}
+
+.registrar {
+    display: flex;
+    margin-bottom: 700px;
+    margin-top: 50px;
+    border: 2px solid #e40d8e;
+    border-radius: 5px;
+}
+
+.registrar h3 {
+    margin: 20px;
+}
+
+.reportes {
+    display: flex;
+    margin-top: 50px;
+    border: 2px solid #e40d8e;
+    margin-bottom: 700px;
+    margin-left: 20px;
+    border-radius: 5px
+}
+
+.reportes h3 {
+    margin: 20px;
+}
+
+.content_registro {
+    display: flex;
+    margin-left: -270px;
+    margin-top: 100px;
+}
+
+table {
+    width: 100%;
+    margin-top: 70px;
+    border-collapse: collapse;
+    margin-bottom: 100px;
+}
+
+table td {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+table td:first-child {
+    background-color: #ffcccc;
+    font-weight: bold;
+}
+
+a .save-button {
+    margin-top: 700px;
+    margin-left: 80.5%;
+    padding: 20px 30px;
+    border: 2px solid #e40d8e;
+    background-color: #fff;
+    color: #e40d8e;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main {
+    flex-grow: 1;
+    padding: 50px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+.category {
+    border: 2px solid #e40d8e;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.category img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.category-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.category ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.category ul li {
+    margin: 5px 0;
+    border: 1px solid #e40d8e;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.producto img{
+    height: 200px;
+    width: 200px;
+    margin-top: 30px;
+    margin-left: 40%;
+}
+
+.producto h2 {
+    display: flex;
+    margin-left: 425px;
+}
+
+.content_editar {
+    width: 1000px;
+}
+
+a .boton_editar {
+    display: flex;
+    text-decoration: none;
+    margin-left: 760px;
+    margin-top: 50px;
+    border: 2px solid black;
+}
+
+.container {
+    width: 70%;
+    margin-left: 400px;
+    margin-top: 50px;
+}
+
+#search-bar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+#search-bar input {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#search-bar button {
+    padding: 10px 20px;
+    background: #e40d8e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.report-options {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.report-options select {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.pdf-button {
+    display: flex;
+    padding: 10px 20px;
+    background: #e40d8e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.configuracion {
+    margin-top: 30px;
+    margin-left: 500px;
+}
+
+.configuracion a h2{
+    margin-top: 70px;
+    color: black;
+}
+
+footer {
+    background-color: #e40d8e;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
